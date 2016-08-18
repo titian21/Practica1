@@ -53,6 +53,7 @@ public class Sustentacion {
                         nomb = leer.nextLine();
                         for(j=0; j<=i; j++)
                             prod[j].Eliminar(nomb);
+                        System.out.println("");
                         break;
                     
                 case 4: System.out.println("::Inventario::");
