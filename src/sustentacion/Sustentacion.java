@@ -42,9 +42,10 @@ public class Sustentacion {
                 case 2: System.out.print("Ingrese el nombre del producto que desea buscar: ");
                         nomb = leer.nextLine();
                         k = 0;
-                        for(j=0; j<i; j++){
-                            prod[j].Buscar(nomb);
-                        }
+                        for(j=0; j<i; j++)
+                            k = k + prod[j].Buscar(nomb);   
+                        if(k>=i)
+                            System.out.println("El producto no existe!");
                         System.out.println("");
                         break;
                     

@@ -22,13 +22,16 @@ public class Producto {
         System.out.println("");
     }
     
-    public void Buscar(String a){       
+    public int Buscar(String a){       
         if(nombre.equals(a)){
             System.out.println("");
             System.out.println("Nombre del producto: " + nombre);
             System.out.println("Cantidad: " + cantidad);
             System.out.println("Valor: " + precio);
+            return 0;
         }
+        else
+            return 1;
     }
     
     public void Eliminar(String a){
@@ -55,7 +58,7 @@ public class Producto {
 
     public void Ventas(String a, int b) {
         if(nombre.equals(a)){
-            if(cantidad>b){
+            if(cantidad>=b){
                 ventas = b;
                 cantidad = cantidad-b;
                 System.out.println("Venta realizada con exito !");
