@@ -35,7 +35,7 @@ public class Sustentacion {
         
             switch(opcion){
             
-                case 1: prod[i].Agregar();
+                case 1: prod[i].Agregar(); a
                         i++;
                         break;
                     
